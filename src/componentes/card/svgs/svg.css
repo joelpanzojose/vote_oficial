@@ -1,0 +1,16 @@
+.plus,
+.poll,
+.stats,.logout {
+    width: 20px;
+    height: 20px;
+   fill: rgba(255, 255, 255, 0.74);
+}
+.plus{
+    fill: rgb(22, 91, 240);
+}
+.poll{
+    fill: rgba(255, 166, 0, 0.733);
+}
+.stats{
+    fill: green;
+}

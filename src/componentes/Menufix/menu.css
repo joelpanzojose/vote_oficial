@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap');
+
+a{
+    color: rgba(255, 255, 255, 0.651);
+}
+a:hover{
+    color: white;
+}
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    border-right: 0.01rem solid rgba(255, 255, 255, 0.144);
+
+
+    background-color: rgba(46, 46, 46, 0.356);
+}
+.conteudoMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 0.01rem solid rgba(255, 255, 255, 0.178);
+   
+}
+.corpomenu{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -130px;
+}
+.corpomenu nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.corpomenu nav ul li{
+    display: flex;
+    gap: 15px;
+    padding: 10px;
+}
+.corpomenu nav ul li:hover{
+     background-color: #535bf2;
+     border-radius: 10px;
+     color: black;
+}
+.active{
+    background-color: #535bf2;
+    border-radius: 10px;
+}
+
+.voto{
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+.corpomenu li:hover .icon svg {
+  fill: white;
+  transition: fill 0.3s;
+}
