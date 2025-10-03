@@ -71,3 +71,12 @@ a:hover{
   fill: white;
   transition: fill 0.3s;
 }
+
+.log{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.281);
+    background-color: #535bf2;
+    cursor: pointer;
+}
