@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Card from './componentes/card/Card'
 import Menu from './componentes/Menufix/menufix'
+import Enquete from './componentes/EnqueteCard/Enquete'
 import './App.css'
 
 function App() {
@@ -8,11 +9,11 @@ function App() {
     <div className='contente-site'>
       <Menu />
             <main>
-                  {/* <Card
-                    titulo="Front Enddddd"
-
-                    conteudo="A parte visível de um site, aplicativo ou software desenvolvido com tecnologia, onde o usuário pode interagir com o sistema"
-                  /> */}
+             
+                  <Enquete
+                    titulo="Qual Melhor Linguagem de Programação?"
+                    opcoes={["Javascript", "C#", "Python" , "Java", "Ruby", "Go", "Swift"]}
+                  />
             </main>
 
 
@@ -26,3 +27,5 @@ function App() {
 }
 
 export default App
+
+
