@@ -4,10 +4,12 @@ import './EnqueteCard.css'
 function Enquete(props) {
     return (
         <div className="corpoEnquete">
+
+            
            
             <div className="CardEnquete">
             <h1>{props.titulo}</h1>
-                <form>
+                <form className="form_enquete">
                     <div className="enquetecontent">
 
                     {props.opcoes && props.opcoes.map((opcao, idx) => (
@@ -25,10 +27,27 @@ function Enquete(props) {
                 </form>
             </div>
 
-            <div className="CardDescricao">
-                <h2>Descrição</h2>
+            <div className="CardDesctalhes">
+
+                <div className="descricao">
+                    <h2>Descrição</h2>
                     <p>{props.primeirotexto}</p>
                     <p>{props.segundotexto}</p>
+                </div>
+
+                <div className="opiniao">
+                    <form action="#">
+                        <h2>Justifique a sua escolha</h2>
+                        <label htmlFor="idopiniao">
+                            Dê-nos a sua opinião (Opcional)
+                        </label>
+
+                        <textarea name="opiniao" id="idopiniao" placeholder="A sua opinião é importante para coletarmos o máximo de informações possíveis "></textarea>
+
+                        <button>Enviar Opinião</button>
+                    </form>
+                </div>
+               
             </div>
           
         </div>

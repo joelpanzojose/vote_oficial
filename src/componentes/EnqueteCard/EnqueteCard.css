@@ -4,46 +4,34 @@
 .corpoEnquete{
     padding: 10px;
     display: flex;
-    /* align-items: center; */
     margin-top: 10px;
     height: 95vh;
     width: 95%;
-    gap: 20px;
-
+    gap: 35px;
     border-radius: 10px;
 }
 .CardEnquete{
     background-color: #ffffff18;
     border-radius: 10px;
     padding: 10px;
-    height: 95vh;
     border: 1px solid rgba(255, 255, 255, 0.185);
-}
-/* .CardEnquete{
-    background-color: #ffffff10;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    height: 95vh;
-    width: 500px;
-    gap: 20px;
 
-    border-radius: 10px;
-} */
+    width: 380px;
+    height: 75.5vh;
+}
 h1{
     font-size: 23px;
 }
-form{
+.form_enquete{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     height: 86vh;
+    gap: 125px;
 }
 form .divbtnVotar button{
-    width: 500px;
-    background-color: #535bf2;
+    width: 300px;
+    background-color: #2a4fff;
 }
 .enquetecontent{
     display: flex;
@@ -59,18 +47,18 @@ form .divbtnVotar button{
     gap: 20px;
 }
 .divOption label{
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     padding: 10px;
-    background-color: #535bf2c7;
+    background-color: #2a4eff9d;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .divOption input{
-    width: 400px;
-    height: 40px;
+    width: 280px;
+    height: 30px;
     border-radius: 5px;
     border: 1px solid #ffffff21;
     background-color: #ffffff18;
@@ -78,12 +66,56 @@ form .divbtnVotar button{
 .divOption input::placeholder{
     padding: 10px;
 }
-.CardDescricao{
+.CardDesctalhes{
     width: 700px;
-    height: 500px;
+    height: 72.5vh;
+    border-radius: 10px;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.descricao{
+    width: 680px;
     padding: 20px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.185);
     background-color: #ffffff10;
     text-align: justify;
 }
+.opiniao{
+    width: 680px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    background-color: #ffffff10;
+    text-align: justify;
+
+    display: flex;
+    flex-direction: column;
+}
+.opiniao form{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.opiniao form label{
+    color: #ffffff69;
+}
+.opiniao form textarea{
+    height: 100px;
+    outline: none;
+    padding: 8px;
+    resize: none;
+    border: none;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff18;
+}
+.opiniao form button{
+    background-color: #2a4fff;
+}
+

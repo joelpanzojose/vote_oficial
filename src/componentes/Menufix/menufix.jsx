@@ -11,7 +11,7 @@ function Menufix() {
 
                 <div className="cabecalho">
                     <img className="voto" src={VotoImg} alt="Voto" />
-                    <h2>Votação Virtual</h2>
+                    <h2>VotaçãoLab</h2>
                 </div>
 
                 <div className="corpomenu">

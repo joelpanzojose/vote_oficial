@@ -2,11 +2,11 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-
+  gap: 40px;
  
 }
 main{
-  background-color: #892be20c;
+ 
   width: 80vw;
 }
 

@@ -28,8 +28,9 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: start;
-    flex-direction: column;
-    padding: 20px;
+    /* flex-direction: column; */
+    gap: 15px;
+    padding: 10px;
     border-bottom: 0.01rem solid rgba(255, 255, 255, 0.178);
    
 }
@@ -53,12 +54,12 @@ a:hover{
     padding: 10px;
 }
 .corpomenu nav ul li:hover{
-     background-color: #535bf2;
+     background-color: #2a4fff;
      border-radius: 10px;
      color: black;
 }
 .active{
-    background-color: #535bf2;
+    background-color: #2a4fff;
     border-radius: 10px;
 }
 
@@ -77,6 +78,6 @@ a:hover{
     gap: 10px;
     padding: 10px;
     border-top: 1px solid rgba(255, 255, 255, 0.281);
-    background-color: #535bf2;
+    background-color: #2a4fff;
     cursor: pointer;
 }
