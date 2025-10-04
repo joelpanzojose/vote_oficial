@@ -2,6 +2,8 @@ import { useState } from 'react'
 import Card from './componentes/card/Card'
 import Menu from './componentes/Menufix/menufix'
 import Enquete from './componentes/EnqueteCard/Enquete'
+import Header from './componentes/Header/Header'
+import perfil from './assets/img/perfil.png'
 import './App.css'
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
     <div className='contente-site'>
       <Menu />
             <main>
+            <Header nomeUser="Joel José" img={perfil}/>
              
                   <Enquete
                     titulo="Qual Melhor Linguagem de Programação?"
@@ -17,10 +20,9 @@ function App() {
                     primeirotexto="Escolha a linguagem que você mais gosta ou que você acha mais interessante para aprender. Cada linguagem tem suas próprias características e usos, então pense bem antes de votar!"
 
                     segundotexto="E você ainda poderá ver os resultados desta enquete, todas as estatísticas ficarão disponíveis na aba das estatístivas. Lá poderá ver o número de votação total, votação média, opção vencedora etc."
-                  />
+            />
 
-                  
-            </main>
+      </main>
 
 
 

@@ -29,9 +29,19 @@ h1{
     height: 86vh;
     gap: 125px;
 }
-form .divbtnVotar button{
-    width: 300px;
+.divbtnVotar{
+    display: flex;
+    gap: 18px;
+}
+.btn_estatisticas{
+    background-color: transparent;
+    border: 1px solid #ffffff7e;
+}
+.btn_votar{
     background-color: #2a4fff;
+}
+form .divbtnVotar button{
+    width: 160px;
 }
 .enquetecontent{
     display: flex;
@@ -66,6 +76,8 @@ form .divbtnVotar button{
 .divOption input::placeholder{
     padding: 10px;
 }
+
+/* O BLOCO DOS DETALHES E DA OPINIÃO */
 .CardDesctalhes{
     width: 700px;
     height: 72.5vh;

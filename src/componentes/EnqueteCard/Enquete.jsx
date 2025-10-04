@@ -21,7 +21,11 @@ function Enquete(props) {
 
                     </div>
                    <div className="divbtnVotar">
-                        <button>Votar</button>
+                    <a href="#">
+                         <button className="btn_estatisticas">Estatísticas</button>
+                    </a>
+                     
+                        <button className="btn_votar">Votar</button>
                    </div>
                    
                 </form>
