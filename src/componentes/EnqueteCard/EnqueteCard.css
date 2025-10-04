@@ -1,16 +1,89 @@
+:root{
+    --background: #0f0f0f;
+}
 .corpoEnquete{
+    padding: 10px;
+    display: flex;
+    /* align-items: center; */
+    margin-top: 10px;
+    height: 95vh;
+    width: 95%;
+    gap: 20px;
+
+    border-radius: 10px;
+}
+.CardEnquete{
+    background-color: #ffffff18;
+    border-radius: 10px;
+    padding: 10px;
+    height: 95vh;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+}
+/* .CardEnquete{
     background-color: #ffffff10;
     padding: 10px;
     display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 10px;
     height: 95vh;
     width: 500px;
+    gap: 20px;
 
     border-radius: 10px;
-}
+} */
 h1{
     font-size: 23px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 86vh;
+}
+form .divbtnVotar button{
+    width: 500px;
+    background-color: #535bf2;
+}
+.enquetecontent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 28px;
+}
+.divOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.divOption label{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: #535bf2c7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divOption input{
+    width: 400px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ffffff21;
+    background-color: #ffffff18;
+}
+.divOption input::placeholder{
+    padding: 10px;
+}
+.CardDescricao{
+    width: 700px;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.185);
+    background-color: #ffffff10;
+    text-align: justify;
 }
