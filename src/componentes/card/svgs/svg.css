@@ -1,6 +1,4 @@
-.plus,
-.poll,
-.stats,.logout {
+svg {
     width: 20px;
     height: 20px;
    fill: rgba(255, 255, 255, 0.74);
@@ -12,5 +10,25 @@
     fill: rgba(255, 166, 0, 0.733);
 }
 .stats{
-    fill: green;
+    fill: #2a4fff;
+}
+.estatisticasCard{
+    width: 40px;
+    height: 40px;
+    fill: orange;
+}
+.pessoas{
+    width: 40px;
+    height: 40px;
+    fill: #169EF2;
+}
+.Man{
+     width: 40px;
+     height: 40px;
+    fill: #1FA628;
+}
+.Woman{
+     width: 40px;
+     height: 40px;
+    fill: #b84bb8;
 }
