@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import './menu.css'
 import VotoImg from '../../assets/img/IconVoto.png';
 import { Plus, IconEnquete, IconEstatisticas, Logout } from '../card/svgs/mysvg';
@@ -16,26 +17,19 @@ function Menufix() {
 
                 <div className="corpomenu">
                     <nav>
-                        <ul>
-                           
-                            <li>
-                                <div className="icon">
-                                    <IconEnquete />
-                                </div>
-                                <a href="#adicionar_enquete">Enquetes Activas</a>
-                            </li>
-                             <li>
-                                <div className="icon">
-                                    <Plus />
-                                </div>
-                                <a href="#home">Adicionar Enquete</a>
-                            </li>
-                            <li>
-                                <div className="icon">
-                                    <IconEstatisticas />
-                                </div>
-                                <a href="#estatisticas_gerias">Estatísticas Gerais</a>
-                            </li>
+                        <ul>  
+                                <li>
+                                    <div className="icon"><IconEnquete /></div>
+                                    <Link to="/">Enquetes Activas</Link>
+                                </li>
+                                <li>
+                                    <div className="icon"><Plus /></div>     
+                                    <Link to="/criar-enquete">Criar Enquete</Link>
+                                </li>
+                                <li>
+                                    <div className="icon"> <IconEstatisticas /> </div>
+                                    <Link to="/estatisticas">Estatísticas Gerais</Link>
+                                </li>
                         </ul>
                     </nav>
                 </div>

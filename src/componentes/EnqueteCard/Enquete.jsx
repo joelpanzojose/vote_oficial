@@ -1,33 +1,28 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import './EnqueteCard.css'
 
 function Enquete(props) {
     return (
         <div className="corpoEnquete">
-
-            
-           
-            <div className="CardEnquete">
+        <div className="CardEnquete">
             <h1>{props.titulo}</h1>
                 <form className="form_enquete">
-                    <div className="enquetecontent">
-
-                    {props.opcoes && props.opcoes.map((opcao, idx) => (
-                        <div className="divOption" key={idx}>
-                            <label htmlFor={`opcao-${idx}`}>{idx + 1}</label>
-                            <input type="text" id={`opcao-${idx}`} placeholder={opcao} disabled />
-                        </div>
-                    ))}
-
+                            <div className="enquetecontent">
+                            {props.opcoes && props.opcoes.map((opcao, idx) => (
+                                <div className="divOption" key={idx}>
+                                    <label htmlFor={`opcao-${idx}`}>{idx + 1}</label>
+                                    <input type="text" id={`opcao-${idx}`} placeholder={opcao} disabled />
+                                </div>
+                            ))}
                     </div>
+
                    <div className="divbtnVotar">
-                    <a href="#">
-                         <button className="btn_estatisticas">Estatísticas</button>
-                    </a>
-                     
+                        <Link to="/estatisticas">
+                            <button className="btn_estatisticas">Estatísticas</button>
+                        </Link>
                         <button className="btn_votar">Votar</button>
-                   </div>
-                   
+                   </div>     
                 </form>
             </div>
 
